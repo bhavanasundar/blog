@@ -1,0 +1,13 @@
+<!-- <img src="https://img.icons8.com/bubbles/50/000000/long-brown-curly-hair-lady-with-glasses.png"/> -->
+
+{{- with .Site.Params.favicon.color }}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{"apple-touch-icon.png" | relURL}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{"bhavz favicon.png" | relURL}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{"bhavz favicon.png" | relURL}}">
+    <link rel="manifest" href="{{"site.webmanifest" | relURL}}">
+    <link rel="mask-icon" href="{{"safari-pinned-tab.svg" | relURL}}" color="{{.mask}}">
+    <link rel="shortcut icon" href="{{"favicon.ico" | relURL}}">
+    <meta name="msapplication-TileColor" content="{{.msapplication}}">
+    <meta name="theme-color" content="{{.theme}}">
+{{ end }}
+<!-- <link rel="icon" href="bhavz favicon.png"> -->
